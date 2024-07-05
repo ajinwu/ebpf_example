@@ -2,3 +2,6 @@ test
 readme.md
 removetrash.py
 vmlinux.h
+*.o
+*.skel.h
+a.out
