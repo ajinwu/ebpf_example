@@ -1,7 +1,4 @@
-// #include "vmlinux.h"
 #include "kp1.skel.h"
-#include <bpf/libbpf.h>
-#include <bpf/libbpf_common.h>
 #include <unistd.h>
 #include <signal.h>
 
@@ -25,5 +22,5 @@ int main(){
     }
 
     cleanup:
-    kp1__destroy(obj);
+        kp1__destroy(obj);
 }
