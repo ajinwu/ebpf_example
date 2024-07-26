@@ -24,6 +24,6 @@ int change_param(struct pt_regs* ctx){
 """
 bpf = BPF(text=program)
 
-bpf.attach_uprobe(name="/root/ebpfexamples/uprobe/py/a.out", sym_re=".*say.*", fn_name="change_param")
+bpf.attach_uprobe(name="/root/ebpfexamples/uprobe/example/a.out", sym_re=".*say.*", fn_name="change_param")
 
 bpf.trace_print()

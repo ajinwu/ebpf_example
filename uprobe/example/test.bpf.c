@@ -1,4 +1,4 @@
-#include "../../vmlinux.h"
+#include <vmlinux.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 
@@ -6,8 +6,8 @@ struct Test{
     int a;    
 };
 
-
-SEC("uprobe//root/ebpfexamples/uprobe/py/a.out:_Z12saySomethingP4Testi")
+// nm a.out
+SEC("uprobe//root/ebpfexamples/uprobe/example/a.out:_Z12saySomethingP4Testi")
 int saySomething(struct pt_regs* ctx){
     int pid = bpf_get_current_pid_tgid() & 0xffffffff;
     void *parm_addr = (void *)PT_REGS_PARM1(ctx);

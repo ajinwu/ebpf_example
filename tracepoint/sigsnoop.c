@@ -1,4 +1,4 @@
-#include "vmlinux.h"
+#include <vmlinux.h>
 #include <bpf/bpf_helpers.h>
 #define TASK_COMM_LEN 16
 #define MAX_ENTRIES 10240

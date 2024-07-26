@@ -1,4 +1,4 @@
-// #include "vmlinux.h"
+// #include <vmlinux.h>
 #include "lsm-connect.skel.h"
 #include <bpf/libbpf.h>
 #include <bpf/libbpf_common.h>

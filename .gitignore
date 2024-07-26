@@ -5,3 +5,4 @@ vmlinux.h
 *.o
 *.skel.h
 a.out
+*.json
